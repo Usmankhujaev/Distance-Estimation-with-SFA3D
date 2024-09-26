@@ -9,6 +9,4 @@ This is the extension code for the [Super Fast and Accurate 3D Object Detection 
 3. Support distributed parallel training
 
 ## Demo Video
-
-[Watch the Demo Video](https://www.youtube.com/watch?v=hAoCTLpyiWw)
-
+[![Watch the demo video](https://img.youtube.com/vi/hAoCTLpyiWw/0.jpg)](https://www.youtube.com/watch?v=hAoCTLpyiWw)
