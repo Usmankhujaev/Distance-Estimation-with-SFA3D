@@ -25,6 +25,7 @@ The tracker backbone was written in _tracker.py_
 
 ## Results
 Check out the results of the work
+![result](./pic_track.png)
 
 ## Citation
 
