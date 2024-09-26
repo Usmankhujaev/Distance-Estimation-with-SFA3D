@@ -21,23 +21,19 @@ Follow the requirements, data preparation, and how-to-run steps that are well-de
 ## EKF implementation
 
 The main idea of the tracking mechanism is in multiple key features that include initialization, prediction, correction track management, track update algorithm, and track creation and deletion. We applied the Extended Kalman Filter method for the track prediction and correction of the frames. 
-The tracker backbone was written in _tracker.py_
+The tracker backbone was written in _tracker.py_. Refer to the _def draw_prediction_ function inside _evaluation_utils.py_ for the EKF initialization and drawing results.
 ```
- def predict(self):
-        # State transition function f(x) should be defined here,
-        # for linear case it is equivalent to dot(A, x)
-        # Assuming f(x) = Ax for simplicity; replace with actual function if needed.
-        self.x = np.dot(self.A, self.x) + self.u
-
-        # Compute Jacobian of F at the last estimated state for linear approximation
-        F_j = np.array([[1.0, self.dt], [0.0, 1.0]])  # Placeholder for actual Jacobian
-
-        # Predict process covariance
-        self.P = np.dot(F_j, np.dot(self.P, F_j.T)) + self.Q
-
-        # Store current state as last estimated state for future iterations
-        self.last_x = self.x.copy()
-        return self.x
+ # Tracker EKF
+    tracker.Update(detection_centers)
+    valid_tracks = []
+    for track in tracker.tracks:
+        if 0 <= track.track_id % 6 < len(track_colors):
+            valid_tracks.append(track)
+        else:
+            print("Invalid track ID:", track.track_id)
+    tracker.tracks = valid_tracks
+    for track in tracker.tracks:
+            track_centers.append(track.KF.predict())
 ```
 ## Results
 Check out the results of the work
