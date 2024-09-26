@@ -1,7 +1,13 @@
 # 3D object distance estimation from the BEV representations
-This project shows the LiDAR-to-image-based method for metric distance estimation with 3D bounding box projections onto the image. We demonstrate that despite the general difficulty of the BEV representation in understanding features related to the height coordinate, it is possible to extract all parameters characterizing the bounding boxes of the objects, including their height and elevation. Finally, we applied the triangulation method to calculate the accurate distance to the objects and statistically proved that our methodology is one of the best in terms of accuracy and robustness.
+This project shows the LiDAR-to-image-based method for metric distance estimation with 3D bounding box projections onto the image. We demonstrate that despite the general difficulty of the BEV representation in understanding features related to the height coordinate, it is possible to extract all parameters characterizing the bounding boxes of the objects, including their height and elevation. Finally, we applied the triangulation method to calculate the accurate distance to the objects and statistically proved that our methodology is one of the best in accuracy and robustness.
 
 This is the extension code with implemented Extended Kalman filter-based tracker for the [Super Fast and Accurate 3D Object Detection based on 3D LiDAR Point Clouds](https://github.com/maudzung/SFA3D)
+
+- [Higlights](#Hightlights)
+- [Demo video](#demo)
+- [Getting started](#usage)
+- [EKF implementation](#ekf)
+
 
 ## Highlights
 1. [The code became part of the research paper](https://www.mdpi.com/1424-8220/23/4/2103) 
@@ -15,8 +21,12 @@ This is the extension code with implemented Extended Kalman filter-based tracker
 
 
 ## Getting started
-Follow the requirements, data preparation, and how to run steps that are well-described in [SFA3D](https://github.com/maudzung/SFA3D)
+Follow the requirements, data preparation, and how-to-run steps that are well-described in [SFA3D](https://github.com/maudzung/SFA3D)
 
+## EKF implementation
+
+The main idea of the tracking mechanism is in multiple key features that include initialization, prediction, correction track management, track update algorithm, and track creation and deletion. We applied the Extended Kalman Filter method for the track prediction and correction of the frames. 
+The 
 
 ## Citation
 
