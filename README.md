@@ -21,7 +21,7 @@ Follow the requirements, data preparation, and how-to-run steps that are well-de
 ## EKF implementation
 
 The main idea of the tracking mechanism is in multiple key features that include initialization, prediction, correction track management, track update algorithm, and track creation and deletion. We applied the Extended Kalman Filter method for the track prediction and correction of the frames. 
-The tracker backbone was written in _tracker.py_. Refer to the _def draw_prediction_ function inside _evaluation_utils.py_ for the EKF initialization and drawing results.
+The tracker backbone was written in _tracker.py_. Refer to the **def draw_prediction** function inside _evaluation_utils.py_ for the EKF initialization and drawing results.
 ```
  # Tracker EKF
     tracker.Update(detection_centers)
