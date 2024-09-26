@@ -3,11 +3,6 @@ This project shows the LiDAR-to-image-based method for metric distance estimatio
 
 This is the extension code with implemented Extended Kalman filter-based tracker for the [Super Fast and Accurate 3D Object Detection based on 3D LiDAR Point Clouds](https://github.com/maudzung/SFA3D)
 
-- [Higlights](#Hightlights)
-- [Demo video](#demo)
-- [Getting started](#usage)
-- [EKF implementation](#ekf)
-
 
 ## Highlights
 1. [The code became part of the research paper](https://www.mdpi.com/1424-8220/23/4/2103) 
@@ -26,7 +21,10 @@ Follow the requirements, data preparation, and how-to-run steps that are well-de
 ## EKF implementation
 
 The main idea of the tracking mechanism is in multiple key features that include initialization, prediction, correction track management, track update algorithm, and track creation and deletion. We applied the Extended Kalman Filter method for the track prediction and correction of the frames. 
-The 
+The tracker backbone was written in _tracker.py_
+
+## Results
+Check out the results of the work
 
 ## Citation
 
