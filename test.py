@@ -1,12 +1,3 @@
-"""
-# -*- coding: utf-8 -*-
------------------------------------------------------------------------------------
-# Author: Nguyen Mau Dung
-# DoC: 2020.08.17
-# email: nguyenmaudung93.kstn@gmail.com
------------------------------------------------------------------------------------
-# Description: Testing script
-"""
 
 import argparse
 import sys
@@ -14,7 +5,6 @@ import os
 import time
 import warnings
 import random
-from deepsort.tracker import DeepSortTracker
 warnings.filterwarnings("ignore", category=UserWarning)
 
 from easydict import EasyDict as edict
