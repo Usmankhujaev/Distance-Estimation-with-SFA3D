@@ -7,7 +7,7 @@ This is the extension code with implemented Extended Kalman filter-based tracker
 ## Highlights
 1. [The code became part of the research paper](https://www.mdpi.com/1424-8220/23/4/2103) 
 2. Fast training, fast inference
-3. Ancho-free approach
+3. Anchor-free approach
 4. Support distributed parallel training
 5. Additionally EKF was implemented
 
